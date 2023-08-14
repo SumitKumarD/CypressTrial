@@ -1,0 +1,6 @@
+@pytest.mark.skip(reason='Not implemented')
+@pytest.mark.xfail(reason='Bug 2001')
+@ptest.mark.regression/@ptest.mark.skip---> pytest -s -v sanity
+@pytest --lf >> for last failed test cases
+@pytest --ff >>> first execute the failed and then execute the rest
+@pytest -k "login" >>>- run a single test
